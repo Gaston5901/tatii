@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Flores Amarillas 💛</title>
 <style>
   /* ===== Reset y cuerpo ===== */
@@ -184,7 +186,7 @@ svg {
   to {opacity:1; transform:scale(1)} 
 }
 
-/* ===== Responsivo específico ===== */
+===== Responsivo específico =====
 @media (max-width: 480px) {
   .pantalla-inicio h1 { font-size: 2rem; }
   .btn { padding: 14px 22px; font-size: 1rem; }
@@ -193,6 +195,54 @@ svg {
   .modal-content { padding: 22px 28px; }
   .modal-content p { font-size: 1.2rem; }
 }
+/* ===== Responsivo (Celulares optimizado) ===== */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .pantalla-inicio h1 { 
+    font-size: 2.4rem;  /* Más grande */
+  }
+
+  .btn { 
+    padding: 16px 26px; 
+    font-size: 1.2rem; 
+  }
+
+  .flor-container { 
+    padding: 45px; /* Más espacio alrededor */
+    max-width: 100%; 
+  }
+
+  svg { 
+    max-width: 420px; /* Flor más grande */
+  }
+
+  .cartelito { 
+    font-size: 1.3rem; 
+    padding: 12px 20px; 
+  }
+
+  .modal-content { 
+    padding: 28px 32px; 
+  }
+
+  .modal-content p { 
+    font-size: 1.3rem; 
+  }
+
+  #boton-musica { 
+    width: 65px; 
+    height: 65px; 
+  }
+
+  .icono-svg { 
+    width: 28px; 
+    height: 28px; 
+  }
+}
+
 
 </style>
 </head>
