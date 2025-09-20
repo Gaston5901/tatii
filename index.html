@@ -208,7 +208,7 @@ svg { width: 100%; height: auto; max-width: 400px; }
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;   /* para que empiece arriba */
   font-size: clamp(1rem, 2.3vw, 1.3rem);
   color: #6d4c41;
   opacity: 0;
@@ -217,8 +217,11 @@ svg { width: 100%; height: auto; max-width: 400px; }
   white-space: pre-wrap;
   box-sizing: border-box;
   z-index: 20;
-  overflow: visible;           /* quita scroll */
+
+  max-height: 60vh;          /* 🔑 limita la altura en pantalla */
+  overflow-y: auto;          /* 🔑 agrega scroll vertical si es necesario */
 }
+
 
 /* Estado abierto del sobre con doblado */
 #carta.abierta .tapa {
